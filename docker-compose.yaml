@@ -4,7 +4,7 @@ services:
   openvpn:
     build:
       context: .
-      dockerfile: Dockerfile.ovpn
+      dockerfile: Dockerfile.openvpn
     image: openvpn:local
     command: /etc/openvpn/setup/configure.sh
     environment:
